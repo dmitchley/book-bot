@@ -9,13 +9,14 @@ def count_words(text):
     #print(new)
     return len(words)
 
+word_counts = {}
 def count_chars(text):
     #loop_text = text.split()
-    word_counts = {}
+    
     words = text.replace(" ", "")
     
     for word in words:
-        word = word.lower().strip(".,!?")  # clean basic punctuation
+        word = word.lower().strip(".,!?")  
         if word in word_counts:
             word_counts[word] += 1
         else:
@@ -23,4 +24,17 @@ def count_chars(text):
 
     return str(word_counts)
 
+
+def new_function(inputstuff):
+
+     
+
+    new = inputstuff.split()
+    print(new.sort())
+    #print(new[0::2])
+    print(new.values())
+    #print(new.sort(reverse=True, new.values()))
+    return inputstuff
  
+
+#new_function(word_counts)
